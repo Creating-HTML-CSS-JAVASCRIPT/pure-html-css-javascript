@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+    background-color: rgb(246,247,251);
+}
+:root{
+    --blue:rgb(52,152,219);
+    --grey:rgb(224,224,224);
+    --transition-time:0.5s;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.anchor-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+.oldclass{
+    margin:0;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--grey);
+    transition: all var(--transition-time);
+}
+.newclass{
+    margin:0;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--blue);
+    transition: all var(--transition-time);
+}
+.lineoldclass{
+    width: 5rem;
+    height: 0;
+    padding: 0;  
+    border: 2px solid var(--grey);
+    background-color:var(--grey);
+    transition: all var(--transition-time);
+}
+.linenewclass{
+    width: 5rem;
+    height: 0;
+    padding: 0;
+    border: 2px solid var(--blue);
+    background-color:var(--blue);
+    transition: all var(--transition-time);
+}
+
+
+
+.button-container{
+
+
+}
+.button-container>button{
+    background-color: var(--blue);
+    padding: 0.5rem 2rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--blue);
+    color: white;
+    cursor:pointer;
+}
+.button-container>button[disabled]{
+    background-color: var(--grey);
+    padding: 0.5rem 2rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey);
+    color: white;
+    cursor:not-allowed;
+}
