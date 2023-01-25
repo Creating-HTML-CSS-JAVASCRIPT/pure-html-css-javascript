@@ -1,0 +1,41 @@
+*{
+    background-color: rgb(240,240,240);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    width: 60vw;
+    margin: auto;
+}
+.header{
+margin-top: 3rem;
+
+text-align: center;
+font-size: 2.5rem;
+}
+.packer{
+ padding: 1rem;
+ background-color: white;
+ margin: 1rem;
+}
+.smallpacker{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.question{
+    background-color: white;
+    padding:0.5rem;
+   font-size: 1.5rem;
+   font-weight: 800;
+
+}
+.answer{
+    background-color: white;
+    padding:0.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
