@@ -17,19 +17,19 @@ function flip(classlist,curr){
 function stylechanger(answershow,answer){
 
 if(answershow[0]){
-    answer.style.display="none"
+    answer.style.display="block"
     
     answershow[0]=false;
 }
 else{
-    answer.style.display="block"
+    answer.style.display="none"
     answershow[0]=true;
 }
 }
 
 function faq(Q,A){
-    let classlist=["fa-close"];
-    let answershow=[true];
+    let classlist=["fa-sort-down"];
+    let answershow=[false];
     const question=document.createElement("div")
     const answer=document.createElement("div")
     const packer=document.createElement("div")
@@ -42,7 +42,7 @@ function faq(Q,A){
     packer.classList.add("packer")
     smallpacker.classList.add("smallpacker")
     close.classList.add("fa")
-    close.classList.add("fa-close")
+    close.classList.add("fa-sort-down")
     close.style.fontSize="1.5rem"
     close.addEventListener("click",()=>{flip(classlist,close);stylechanger(answershow,answer)})
     smallpacker.appendChild(question)
@@ -50,8 +50,10 @@ function faq(Q,A){
     packer.appendChild(smallpacker)
     packer.appendChild(answer)
     container.appendChild(packer)
+    
+    stylechanger(answershow,answer)
 }
 faq("why shouldn't we trust atoms?","They make up everything")
 faq("what do you call someone with no body and no nose?","nobody knows")
-faq("what ths objec oriented way to become wealthy?","inheritance")
+faq("what ths object oriented way to become wealthy?","inheritance")
 faq("what is :1+1?","Depends on who you are asking")
