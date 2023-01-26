@@ -24,12 +24,12 @@ function selectrandom(event){
      event.preventDefault(); 
      textarea.disabled=true;
      const tellingstatus=document.createElement("div")
-     tellingstatus.innerHTML='Drum roll your random choice is '
+     tellingstatus.innerHTML='Drum roll your random choice will be '
      tellingstatus.classList.add("choicepicked")
      choicesarr=choicesarr.filter((item)=>{return item!=""})
     
-     const blink=setInterval(blinking,10000)
-     setTimeout(()=>{finishpick(blink)},200000)
+     const blink=setInterval(blinking,300)
+     setTimeout(()=>{finishpick(blink)},5000)
      allchoices.prepend(tellingstatus)
     }
 }
@@ -38,22 +38,19 @@ function blinking(){
 
 let subchoices=document.querySelectorAll('.choice')
 const lengtharr=subchoices.length;
-let rotate=0;
 for(let i=0;i<lengtharr;i++){
-    subchoices[i].id='choiceblink'
-    console.log('blinking1')
-    console.log(subchoices[i].id);
-    sleepFor(500)
-    console.log('blinking2')
-    subchoices[i].id=''
-    sleepFor(500)
+subchoices[i].id=''    
 }
+subchoices[Math.floor(Math.random()*subchoices.length)].id='choiceblink'
+
 }
 function finishpick(blink){
 clearInterval(blink)
-console.log('finished')
+let subchoices=document.querySelectorAll('.choice')
+const lengtharr=subchoices.length;
+for(let i=0;i<lengtharr;i++){
+    subchoices[i].id=''    
 }
-function sleepFor(sleepDuration){
-    var now = new Date().getTime();
-    while(new Date().getTime() < now + sleepDuration){ /* Do nothing */ }
+subchoices[Math.floor(Math.random()*subchoices.length)].id='choiceblink'
+textarea.disabled=false;
 }
