@@ -38,12 +38,23 @@ function createimage(currimage){
     const minicontainer=document.createElement("div")
     const image=document.createElement("img");
     const title=document.createElement("div")
+    const overviewcontainer=document.createElement("div")
     const overview=document.createElement("div")
-    minicontainer.appendChild(image)
-    minicontainer.appendChild(title)
+    const year=document.createElement("h1")
+    overviewcontainer.append(year,overview)
+    minicontainer.append(image,title,overviewcontainer)
+    
+    overviewcontainer.classList.add("overview")
+    overview.innerHTML=" dummy texlorem Ipsum is simply dummlorem Ipsum is simply dummy tex lorem Ipsum is simply dummy texlorem Ipsum is simply dummy texthe release of Le";
+    year.innerHTML="overview";
+    
     image.src=imagelink;
     image.alt="movie images"
+    //
     title.innerHTML=""+currimage.title;
     title.classList.add("title")
+    //
+    console.log(minicontainer)
+    minicontainer.classList.add("minicontainer")
     return minicontainer;
 }
