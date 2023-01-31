@@ -44,26 +44,19 @@ width: fit-content;
     height: 100%;
     visibility: visible;
 }
-.emtpy-space-zero{
-    transition: 0.3s all linear;
-    height: 0;
-    visibility: hidden;
-}
+
 
 .water-filling{
-    background-color: red;
+    background-color: rgb(52,148,228);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    visibility: visible;
     transition: 0.3s all linear;
 }
- .water-filling-empty{
-    visibility: hidden;
-    height: 0;
-    transition: 1s all linear;
-} 
+
 
 .small-container{
     margin: 1rem;
@@ -91,8 +84,12 @@ width: fit-content;
     background-color: white;
     color:rgb(20,79,198);
     border:2px solid rgb(20,79,198);
+    transition: 0.1s all linear;
+}
+.mini-glass:hover{
+    cursor: pointer;
 }
 .add-mini-glass-color{
     color:white;
-    background-color: rgb(20,79,198);
+    background-color: rgb(52,148,228);
 }
