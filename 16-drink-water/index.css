@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+   background-color: rgb(52,148,228);
+}
+.heading{
+margin: 0.2rem auto;
+color: white;
+font-size: 2rem;
+width: fit-content;
+}
+.sub-heading{
+    font-size: 1.3rem;
+    margin: 0.2rem auto;   
+    color: white;
+    width: fit-content;
+}
+.container{
+    width:150px;
+    height:333px;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    border-bottom-left-radius:3rem ;
+    border-bottom-right-radius:3rem ;
+    border: 5px solid rgb(20,79,198);
+    background-color: white;
+    overflow: hidden;
+}
+.emtpy-space{
+    color: rgb(20,79,198);
+    font-weight: 700;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s all linear;
+    height: 100%;
+    visibility: visible;
+}
+.emtpy-space-zero{
+    transition: 0.3s all linear;
+    height: 0;
+    visibility: hidden;
+}
+
+.water-filling{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: 0.3s all linear;
+}
+ .water-filling-empty{
+    visibility: hidden;
+    height: 0;
+    transition: 1s all linear;
+} 
+
+.small-container{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.small-glass-container{
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mini-glass{
+    width: 50px;
+    height: 100px;
+    text-align: center;
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius:1rem ;
+    margin: 0.5rem;
+    padding-top: 30px;
+    background-color: white;
+    color:rgb(20,79,198);
+    border:2px solid rgb(20,79,198);
+}
+.add-mini-glass-color{
+    color:white;
+    background-color: rgb(20,79,198);
+}
