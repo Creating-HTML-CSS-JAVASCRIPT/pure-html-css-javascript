@@ -8,7 +8,7 @@ function addgrowingcircle(event){
     growingcircle.style.top=""+y+"px";
     growingcircle.style.left=""+x+"px";
     growingcircle.classList.add('growing-circle')
-    setTimeout(removeclass,310)
+    setTimeout(removeclass,500)
 }
 function removeclass(){
 growingcircle.classList.remove('growing-circle')

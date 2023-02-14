@@ -39,7 +39,6 @@ background-color: rgb(255, 255, 255, 0.5);
 animation-name: growcircle;
 animation-duration: 0.5s;
 animation-direction:normal;
-animation-iteration-count: infinite;
 pointer-events: none;
 }
 @keyframes growcircle{
