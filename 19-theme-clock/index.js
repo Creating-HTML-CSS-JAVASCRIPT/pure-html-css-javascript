@@ -11,8 +11,7 @@ const body=document.getElementsByTagName('body')[0];
 function showdigitalclock() {
     const currdate=new Date().toLocaleTimeString();
     const digitaldate=new Date().toDateString();
-    digitalclock.innerHTML=currdate.substring(0,4)+currdate.substring(8,10);
-}
+    digitalclock.innerHTML=currdate.substring(0,5)+currdate.substring(8,11)}
 
 function showanalogclock(){
 const currdate=new Date().toLocaleTimeString();
